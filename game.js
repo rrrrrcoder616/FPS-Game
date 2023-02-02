@@ -5,6 +5,7 @@ var	io = require("socket.io")({
 	});
 var	Player = require("./public/shared/models/Player").Player;
 
+//hi ther
 //Global Variables
 var socket; 
 var	players;
@@ -37,7 +38,7 @@ function onSocketConnection(client) {
 };
 
 
-//Event Functions
+//Event Functionss
 //==============================================================================
 //Socket client has connected, must created a new player for the connection
 function onClientConnect(client){
@@ -49,6 +50,7 @@ function onClientConnect(client){
 	newPlayer.setColor(Math.random(), Math.random(), Math.random()); 
 	players.push(newPlayer);
 }  
+//hi ther
 //Before this the user is not loaded
 function onSetUserName(data){
     var player = playerById(this.id);
